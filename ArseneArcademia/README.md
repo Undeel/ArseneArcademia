@@ -1,3 +1,3 @@
-# Simple Worldbuilding System
+# ArseneArcademia
 
-A simple game system for Foundry VTT which allows for flexible definition of Actors and Items to assist with worldbuilding or for running games which do not have a more complete system implementation available.
+만들어보려고는 하는데 어떻게 돌아갈지는 며느리도 모르겠다

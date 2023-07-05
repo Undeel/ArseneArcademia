@@ -1,9 +1,27 @@
 {
 "Actor": {
-  "types": ["character"],
+  "types": ["character", "Animal"],
+  "templates" :{
+    "basestats" : {
+      "hp": {
+        "value": 0,
+        "min": 0,
+        "max": 1000
+      },
+      "shield": {
+        "value": 0,
+        "min": 0,
+        "max": 1000
+      }
+    },
+    "background" : {
+      "biography" : "",
+      "speciality" : ""
+    }
+  },
   "htmlFields": ["biography"],
   "character": {
-    "biography": "",
+    "templates" : ["basestats","background"],
     "power": {
       "value": 0,
       "min": 0,
@@ -31,17 +49,52 @@
     },
     "attributes": {},
     "groups": {}
+  },
+  "Animal" :{
+    "templates" : ["basestats","background"],
+    "youkai" : {
+      "value": 0,
+      "min": 0,
+      "max": 50
+    },
+    "animal" : {
+      "value": 0,
+      "min": 0,
+      "max": 50
+    },
+    "otona" : {
+      "value": 0,
+      "min": 0,
+      "max": 50
+    },
+    "kodomo" : {
+      "value": 0,
+      "min": 0,
+      "max": 50
+    }
   }
 },
 "Item": {
-  "types": ["item"],
+  "types": ["skill","trait","item"],
   "htmlFields": ["description"],
+  "templates": {
+    "base" : {
+      "description": "",
+      "attributes": {},
+      "groups": {}
+    }
+  },
+  "skill": {
+    "templates": ["base"]
+  },
+  "trait": {
+    "templates": ["base"],
+    "rank": 1
+  },
   "item": {
-    "description": "",
+    "templates": ["base"],
     "quantity": 1,
-    "weight": 0,
-    "attributes": {},
-    "groups": {}
+    "weight": 0
   }
 }
 }
